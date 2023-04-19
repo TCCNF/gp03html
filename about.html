@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>Metaverse</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <style>
+      body {
+        background: rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links">
+          <i
+            class="fa fa-window-close"
+            aria-hidden="true"
+            onclick="hideMenu()"
+          ></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blockchain.html">BLOCKCHAIN</a></li>
+            <li><a href="effect.html">NFT</a></li>
+            <li><a href="credit.html">CREDIT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="hideMenu()"></i>
+      </nav>
+      <h1>About Metaverse</h1>
+    </section>
+
+    <section class="about">
+      <div class="row">
+        <div class="about-col">
+          <h1>What is Metaverse?</h1>
+          <p>
+            The Metaverse is a futuristic virtual reality realm that facilitates
+            real-time user interactions with both the virtual environment and
+            other users. It's a concept that envisions a shared virtual space
+            where people can inhabit, conduct business and entertainment
+            activities without physical barriers in a 3D world.
+
+            <br /><br />The Metaverse merges virtual reality and augmented
+            reality technologies, creating a comprehensive and interconnected
+            virtual universe that can transform the way we interact with each
+            other, enterprises, and entertainment.
+
+            <br /><br />Within the Metaverse, users can customize and design
+            their avatars, explore virtual worlds, interact with other users and
+            take part in various activities such as gaming, shopping, attending
+            events, and many more. This concept is constantly evolving and
+            expanding, and it holds the potential to revolutionize our
+            lifestyles and working patterns.
+          </p>
+        </div>
+        <div class="about-col">
+          <img src="images/about.jpg" />
+        </div>
+      </div>
+
+      <div class="videos">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/V6VsxcVpBVY"
+          title="What is the metaverse? - BBC News"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <section class="background">
+        <h1>About Metaverse effect</h1>
+
+        <div class="background-col">
+          <h3>Business</h3>
+          <p>
+            The Metaverse can provide new opportunities for entrepreneurship and
+            <br />employment, as virtual goods and services become more
+            prevalent. <br />It can also create new industries, such as virtual
+            real estate <br />and advertising.
+          </p>
+        </div>
+
+        <div class="background-col">
+          <h3>Social</h3>
+          <p>
+            The Metaverse can provide people with a sense of community and
+            social
+            <br />connection, especially for those who may feel isolated or
+            marginalized <br />in the physical world. It can also facilitate
+            cross-cultural <br />communication and understanding, bringing
+            people from different <br />backgrounds and geographic locations
+            together.
+          </p>
+        </div>
+
+        <div class="background-col">
+          <h3>Safety</h3>
+          <p>
+            The Metaverse can also present risks of exploitation and
+            surveillance,
+            <br />as personal data and virtual assets are stored and tracked.
+            There are <br />concerns about how companies and governments will
+            use this data, and <br />how it could be exploited for profit or
+            control.
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <section class="footer">
+      <div class="footer-col">
+        <h4>Made by Group 3</h4>
+        <p>
+          COMM2036: Media Design and Digital Applications (Group Project)
+          <br />Topic 2: Metaverse, blockchain, and non-fungible token (NFT)
+        </p>
+      </div>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

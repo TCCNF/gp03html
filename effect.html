@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>Metaverse</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <style>
+      body {
+        background: rgb(0, 0, 0);
+        padding-bottom: 25px;
+      }
+      .column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  color: white;
+}
+div.b {
+  text-align: left;
+}
+      img.ims {
+  height: 30%;
+  width: 30%;
+     }
+     img2.ims {
+  height: 100%;
+  width: 100%;
+     }
+     .btn {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+     }
+     
+     .bb {background-color: #2196F3;} /* Blue */
+     .bb:hover {background: #0b7dda;}
+     
+     .oo {background-color: #ff9800;} /* Orange */
+     .oo:hover {background: #e68a00;}
+     
+     .rr {background-color: #f44336;} /* Red */
+     .rr:hover {background: #da190b;}
+     
+     #myBtn {
+       display: none;
+       position: fixed;
+       bottom: 20px;
+       right: 30px;
+       z-index: 99;
+       font-size: 18px;
+       border: none;
+       outline: none;
+       background-color: red;
+       color: white;
+       cursor: pointer;
+       padding: 15px;
+       border-radius: 4px;
+     }
+
+    </style>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links">
+          <i
+            class="fa fa-window-close"
+            aria-hidden="true"
+            onclick="hideMenu()"
+          ></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blockchain.html">BLOCKCHAIN</a></li>
+            <li><a href="effect.html">NFT</a></li>
+            <li><a href="credit.html">CREDIT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="hideMenu()"></i>
+      </nav>
+      <h1>Non-Fungible Token (NFT)</h1>
+    </section>
+
+    <section class="background">
+      <h1>What is NFT?</h1>
+      <p> </p>
+
+      <div class="background-col">
+        <div class="row">
+          
+                <iframe width="600" height="400" 
+                src="https://www.youtube.com/embed/NNQLJcJEzv0" 
+                title="NFT Explained In 5 Minutes | What Is NFT? - Non Fungible Token | NFT Crypto Explained | Simplilearn" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+             
+       <div class="column"  >
+        <div class="b">
+         
+        <p >
+          NFT is a form of crowdsourcing used to help project parties.
+          It is a data element on the blockchain electronic ledger as well.
+           A unique piece of digital data may be represented by each token,
+            which can also act as an electronic certification or 
+            proof of ownership for virtual goods.
+        </p>
+        <p >
+          <br /><br />Non-fungible tokens can represent digital assets like pictures, 
+          artwork, audio, movies, in-game projects, or other types of 
+          creative effort because of their non-fungibility.The tokens used
+           to represent the works are completely trackable on the underlying 
+           blockchain, giving purchasers evidence of ownership even though the works t
+           hemselves are indefinitely reproducible.
+
+        <p >
+          </div>    
+          
+        </div>
+            </div>
+      </div>
+
+      
+      
+      <div class="background-col">
+        <h3>what is NFT generator</h3>
+        
+        
+        <div class="row">
+        <img src="images/img5.jpg " width="600" height="400" />
+        <div class="column"  >
+          <div class="b">
+           
+          <p >
+           
+        An NFT generator is software made to swiftly produce original NFTs arts from base art.
+         You may either download software or find an NFT generator online.
+          Because the software is built on AI, they are also referred to as AI NFT generators.
+
+          </p>
+          <p >
+
+            <br /><br />It is not surprising that there is a similar spike 
+            in demand for NFT art generators given the increased traction of NFTs.
+             An NFT generator is software made to swiftly produce original NFTs arts from base art.
+
+          <p >
+
+            <p >
+
+              <br /><br />You may either download software or find an NFT generator online.
+               Because the software is built on AI, they are also referred to as AI NFT generators.
+                There is no prior technical knowledge needed to use this program because it is so straightforward.
+                 You can create photos with a vast array of attributes using an NFT generator on GitHub.
+
+            <p >
+            </div>    
+            
+          </div>
+        </div>
+        </section>
+      
+        
+   
+    
+      <script>
+        function getRandomImage() {
+        //declare an array to store the images
+        var randomImage = new Array();
+        
+       
+        randomImage[0] = "images/img1.jpg";
+        randomImage[1] = "images/img2.jpg";
+        randomImage[2] = "images/img3.jpg";
+        
+        
+      
+        
+        //generate a number and provide to the image to generate randomly
+        var number = Math.floor(Math.random()*randomImage.length);
+        
+        //return the images generated by a random number
+        return document.getElementById("result").innerHTML = '<center><img class="ims" src="'+randomImage[number]+'"  width="100" height="100"/></center> ';
+        
+
+
+        }
+      
+        function getRandomImage2() {
+        //declare an array to store the images
+       
+        var randomImage2 = new Array();
+       
+       
+        
+        randomImage2[0] = "images/jp1.jpg";
+        randomImage2[1] = "images/jp2.jpg";
+        randomImage2[2] = "images/jp3.jpg";
+        
+        //generate a number and provide to the image to generate randomly
+        var number2 = Math.floor(Math.random()*randomImage2.length);
+        
+        //return the images generated by a random number
+        return document.getElementById("result").innerHTML = '<center><img class="ims" src="'+randomImage2[number2]+'"  width="100" height="100"/> </center>';
+
+
+
+        }
+        
+        function getRandomImage3() {
+        //declare an array to store the images
+        var randomImage3 = new Array();
+        
+       
+        randomImage3[0] = "images/img4.jpg";
+        randomImage3[1] = "images/img42.jpg";
+        
+      
+        
+        //generate a number and provide to the image to generate randomly
+        var number3 = Math.floor(Math.random()*randomImage3.length);
+        
+        //return the images generated by a random number
+        return document.getElementById("result").innerHTML = '<center><img class="ims" src="'+randomImage3[number3]+'"  width="100" height="100"/></center> ';
+        
+
+
+        }
+        
+       
+
+        </script>
+
+       <section class="background">
+        <div class="background-col">
+        <center><h2 style="color:purple">Example Of Random Image Generator </h2></center>
+        
+        <center><button class="btn bb" onclick = getRandomImage()> Generate style : oil painting</button>
+                <button class="btn rr" onclick = getRandomImage2()> Generate style : electronic drawing  </button>
+                <button class="btn oo" onclick = getRandomImage3()> Generate style : Sketch  </button>
+        </center>
+        
+        <br> <br>
+        <span id="result" align="center"> </span> 
+          
+      </div>  
+    </section>
+
+    <section class="background">
+      <div class="background-col">
+        <h3>Bring you to the NFT market
+          (Click the Picture that you like)
+        </h3>
+       
+
+        <div class="row">
+          <div class="column">
+            <a href="https://crypto.com/nft/marketplace?asset=62a673e7f205228ca7f84477d4bfc934&edition=d7894900b4e87defa619882680aab2e7&detail-page=MARKETPLACE"> <img class="ims2" src="images/pn3.png" style="width:100%" > </a>
+         
+          </div>
+          <div class="column">
+            <a href="https://crypto.com/nft/marketplace?asset=b787f3a72eb639b58a9b03529920e984&edition=95b49a1c99fd1c42e7b0656c21da2c2e&detail-page=MARKETPLACE">  <img class="ims2" src="images/pn2.png" style="width:100%" > </a>
+           
+          </div>
+          <div class="column">
+            <a href="https://crypto.com/nft/marketplace?asset=20a62ddb7d27a472fb95afd931c6b4ce&edition=01f43aa952268df91a1ae14540a290c8&detail-page=MARKETPLACEE">  <img class="ims2" src="images/pn1.png" style="width:100%" > </a>
+           
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+    <section class="footer">
+      <div class="footer-col">
+        <h4>Made by Group 3</h4>
+        <p>
+          COMM2036: Media Design and Digital Applications (Group Project)
+          <br />Topic 2: Metaverse, blockchain, and non-fungible token (NFT)
+        </p>
+      </div>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+
+      let mybutton = document.getElementById("myBtn");
+
+       // When the user scrolls down 20px from the top of the document, show the button
+       window.onscroll = function() {scrollFunction()};
+       
+       function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           mybutton.style.display = "block";
+         } else {
+           mybutton.style.display = "none";
+         }
+       }
+       
+       // When the user clicks on the button, scroll to the top of the document
+       function topFunction() {
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+       }
+
+    </script>
+    
+  </body>
+</html>

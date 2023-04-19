@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>Metaverse</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <style>
+      body {
+        background: rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links">
+          <i
+            class="fa fa-window-close"
+            aria-hidden="true"
+            onclick="hideMenu()"
+          ></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blockchain.html">BLOCKCHAIN</a></li>
+            <li><a href="effect.html">NFT</a></li>
+            <li><a href="credit.html">CREDIT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="hideMenu()"></i>
+      </nav>
+      <h1>Credit</h1>
+    </section>
+
+    <section class="background">
+      <h1>Reference</h1>
+      <p>Here is the source used in this website.</p>
+
+      <div class="background-col">
+        <h3>Image source</h3>
+        <p>
+          Main background:
+          https://www.forbes.com/sites/bernardmarr/2022/03/21/a-short-history-of-the-metaverse/?sh=24d16dc59688
+          <br />
+          Blockchain image:
+          https://www.ibm.com/blogs/blockchain/2020/04/the-future-of-blockchain/
+          <br />
+          NFT image:
+          https://www.vecteezy.com/vector-art/7644761-raised-fist-logo-raised-black-fist-vecor-icon-victory-rebel-symbol-in-protest-or-riot-gesture-symbol
+          <br />https://www.vecteezy.com/free-vector/market-icon
+          <br />https://www.vecteezy.com/vector-art/4853120-money-cash-wealth-payment-line-icon-vector-illustration-logo-template-suitable-for-many-purposes
+          <br />https://crypto.com/nft/marketplace?asset=62a673e7f205228ca7f84477d4bfc934&edition=d7894900b4e87defa619882680aab2e7&detail-page=MARKETPLACE
+          <br />https://crypto.com/nft/marketplace?asset=b787f3a72eb639b58a9b03529920e984&edition=95b49a1c99fd1c42e7b0656c21da2c2e&detail-page=MARKETPLACE
+          <br />https://crypto.com/nft/marketplace?asset=20a62ddb7d27a472fb95afd931c6b4ce&edition=01f43aa952268df91a1ae14540a290c8&detail-page=MARKETPLACE
+          <br />https://mpost.io/best-8-nft-ai-art-generators-create-10000-nft-collection-for-free-and-no-code/
+          <br />
+          Metaverse image:
+          https://howlife.cna.com.tw/financial/20220819s006.aspx
+        
+        </p>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-col">
+        <h4>Made by Group 3</h4>
+        <p>
+          COMM2036: Media Design and Digital Applications (Group Project)
+          <br />Topic 2: Metaverse, blockchain, and non-fungible token (NFT)
+        </p>
+      </div>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

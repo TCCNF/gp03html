@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>Metaverse</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <style>
+      body {
+        background: rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links">
+          <i
+            class="fa fa-window-close"
+            aria-hidden="true"
+            onclick="hideMenu()"
+          ></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blockchain.html">BLOCKCHAIN</a></li>
+            <li><a href="effect.html">NFT</a></li>
+            <li><a href="credit.html">CREDIT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="hideMenu()"></i>
+      </nav>
+      <h1>Blockchain</h1>
+    </section>
+
+    <section class="about">
+      <div class="row">
+        <div class="about-col">
+          <h1>What is the Blackchain?</h1>
+          <p>A blockchain is a particular kind of shared database that differs from other databases in that it stores data in blocks that are then connected by cryptography.</p>
+          <p>A new block is created as each new piece of data arrives. The data is chained together in chronological order once the block has been filled with information and is attached to the block before it.</p>
+          <p>Although different kinds of information can be stored on a blockchain, a transaction ledger has so far been its most popular use.</p>
+          <p>In Bitcoin's case, blockchain is used in a decentralized way so that no single person or group has control—rather, all users collectively retain control.</p>
+          <p>Since decentralized blockchains are immutable, the data entered into them cannot be changed. This implies that transactions made using Bitcoin are publicly visible and permanently recorded.</p>
+        </div>
+        <div class="about-col">
+          <img src="images/Blockchain1.webp" />
+          <img src="images/Blockchain2.png" />
+        </div>
+      </div>
+
+      <div class="background-col">
+        <h3>To be simple</h3>
+        <p>
+          Blockchain is nothing more than a database and it can only be appended, which means you can only add information. You cannot delete or modify in any way the information you have added with the click of a button. Then there is the fact that each entry in the database is cryptographically linked to the next entry. In the vernacular, each new entry must contain a digital fingerprint of the previous entry. Blockchains are Untamperable. If you change the content of a block, the fingerprint will change with it.
+        </p>
+      </div>
+
+      <div class="container">
+        <img src="images/safety deposit box1.jpg">
+        <img src="images/safety deposit box1.jpg">
+        <img src="images/safety deposit box1.jpg">
+        <img src="images/safety deposit box1.jpg">
+      </div>
+
+      <div class="background-col">
+        <h3>Have you heard about Blockchain-Based Games?</h3>
+        <p>
+          Any game that uses blockchain technology to improve or redesign conventional video games is referred to as a blockchain game. 
+
+          Regardless of the genre, the goal of blockchain games is to redefine player-game developer relationships in a way that is more equitable and open. Nevertheless, there are different ways that blockchain technology can be incorporated into video games.        </p>
+      </div>
+
+      <div class="videos">
+        <iframe width="1263" height="480" src="https://www.youtube.com/embed/roO0tIpYk6Q" title="Blockchain Games Are Here - What You Should Know" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="row">
+        <div class="about-col">
+          <h1>Game controversy</h1>
+          <p>Players are able to buy, sell, or trade in-game items with other players when playing video games that incorporate blockchain technology elements, such as cryptocurrencies and non-fungible tokens (NFTs). Each transaction includes a fee that is taken by the game publisher as a form of monetization. A subset of these games is also referred to as "play-to-earn games" because they have features that let users earn cryptocurrency while playing. Since their introduction in 2017, blockchain games will start receiving more attention from the video game industry in 2021. Many AAA publishers have said they'll use this technology in the future. Blockchain technology in video games has drawn criticism for being unnecessary, unneeded, and exploitative from players, developers, and game companies.</p>
+        </div>
+        <div class="about-col">
+          <img src="images/blockchaingame.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-col">
+        <h4>Made by Group 3</h4>
+        <p>
+          COMM2036: Media Design and Digital Applications (Group Project)
+          <br />Topic 2: Metaverse, blockchain, and non-fungible token (NFT)
+        </p>
+      </div>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
